@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark text-center">
+    <h1 class="text-light m-auto">Weather Dashboard</h1>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-5 col-lg-4 col-xl-3 pt-3 bg-light" id="search-div">
+        <form class="form-inline mb-3" id="city-search">
+          <h4 class="mr-3">Search for a City: </h4>
+          <input type="text" class="form-control" id="search-input">
+          <button type="submit" class="btn btn-primary form-control"><i class="fas fa-search"></i></button>
+        </form>
+
+        <div class="card hide" id="history-card">
+            <ul class="list-group list-group-flush" id="search-history">
+
+            </ul>
+        </div>
+      </div>
+      <div class="col-12 col-md-7 col-lg-8 col-xl-9">
+       
+          <div class="row pt-md-3 pr-md-3 pl-md-3">
+            <div class="card hide col-12" id="current-weather">
+              <h3 class="hide" id="error-message">Sorry we can't find what you're looking for :(</h3>
+              <div class="card-body" id="weather-body">
+              
+              </div>
+
+            </div>
+          </div>
+          <div class="row hide pt-3 p-md-3" id="forecast-section">
+            <div class="col-12">
+              <h3>5-Day Forecast:</h3>
+            </div>
+            <div class="col-12">
+              <div class="row d-flex justify-content-lg-between" id="five-day">
+
+              </div>
+            </div>
+            
+          </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
